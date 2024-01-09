@@ -28,8 +28,9 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: feat/enson-ui
+          folder: docs-dist
           publish_dir: docs-dist
-
 
     # runs-on: ubuntu-latest
     # steps:
