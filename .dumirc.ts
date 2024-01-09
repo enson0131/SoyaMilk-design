@@ -1,6 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
+  base: '/SoyaMilk-design/',
   publicPath: '/SoyaMilk-design/',
   outputPath: 'docs-dist',
   themeConfig: {

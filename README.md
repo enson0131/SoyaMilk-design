@@ -45,3 +45,4 @@ MIT
 - https://d.umijs.org/guide/conventional-routing
 - https://juejin.cn/post/7248021617161977917
 - https://juejin.cn/post/7103871313492017159
+- https://v1.d.umijs.org/zh-CN/guide/faq#%E9%83%A8%E7%BD%B2%E5%88%B0github-pages - 自动部署
