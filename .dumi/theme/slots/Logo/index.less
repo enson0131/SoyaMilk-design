@@ -1,0 +1,42 @@
+@import (reference) '../../styles/variables.less';
+
+.@{prefix}-logo {
+  display: inline-flex;
+  align-items: center;
+  color: @c-text;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: bold;
+  text-decoration: none;
+
+  @{dark-selector} & {
+    color: @c-text-dark;
+  }
+
+  @media @mobile {
+    font-size: 18px;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  img {
+    display: block;
+    margin-inline-end: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+
+    @media @mobile {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .dumi-default-title {
+    white-space: nowrap;
+    margin-inline-end: 12px;
+  }
+}
