@@ -1,6 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
+  publicPath: '/SoyaMilk-design/',
   outputPath: 'docs-dist',
   themeConfig: {
     logo: '/logo.webp',
