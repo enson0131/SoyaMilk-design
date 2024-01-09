@@ -27,8 +27,8 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: feat/enson-ui # 打包的内容放到 feat/enson-ui 分支下
-          folder: doce-dist # 打包的文件夹
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs-dist
 
 
     # runs-on: ubuntu-latest
