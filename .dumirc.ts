@@ -1,13 +1,14 @@
 import { defineConfig } from 'dumi';
 
 const isDev = process.env.NODE_ENV === 'development';
+const sourcePath = isDev ? '/' : '/SoyaMilk-design/';
 console.log(`isDev--->`, isDev);
 export default defineConfig({
-  base: isDev ? '/' : '/SoyaMilk-design/',
-  publicPath: isDev ? '/' : '/SoyaMilk-design/',
+  base: sourcePath,
+  publicPath: sourcePath,
   outputPath: 'docs-dist',
   themeConfig: {
-    logo: '/logo.webp',
+    logo: `${sourcePath}logo.webp`,
     name: 'SoyaMilk-design',
     footer: 'SoyaMilk-design © 2024',
     nav: {
