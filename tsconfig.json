@@ -9,7 +9,9 @@
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "SoyaMilk-design": ["src"],
-      "SoyaMilk-design/*": ["src/*", "*"]
+      "SoyaMilk-design/*": ["src/*", "*"],
+      "@": ["src"],
+      "@/*": ["src/*"]
     }
   },
   "include": [".dumirc.ts", "src/**/*"]
