@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://jacky-summer.github.io/monki-ui">
-    <img width="120" src="https://enson0131.github.io/SoyaMilk-design/ui-logo.png">
+    <img width="120" style="border-radius: 50%;" src="https://enson0131.github.io/SoyaMilk-design/ui-logo.png">
   </a>
 </p>
 
@@ -62,7 +62,7 @@ $ yarn run doctor
 
 ## 一些经验总结
 
-- 哭死。。。多项目部署其实同个分支也没有问题的，只要确保每个项目的目录不同就行了（有点类似于做了负载均衡的操作），市面上的多项目部署用的是不同的分支，发现用不同的分支好像显示不出来（2024/01/09）
+- 哭死。。。github.io 多项目部署其实同个分支也没有问题的，只要确保每个项目的目录不同就行了（有点类似于做了负载均衡的操作），市面上大部分文章说的多项目部署用的是不同的分支，发现用不同的分支好像显示不出来（2024/01/09）
 
 ## LICENSE
 

@@ -6,5 +6,6 @@ export default defineConfig({
   esm: { output: 'dist' },
   alias: {
     '@': resolve(__dirname, 'src'),
+    '~@': resolve(__dirname, 'src'),
   },
 });

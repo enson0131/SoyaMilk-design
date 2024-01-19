@@ -1,0 +1,179 @@
+@import '~@/assets/styles/variables.less';
+
+@button-large-padding-x: 8px;
+@button-large-padding-y: 16px;
+@button-middle-padding-x: 5px;
+@button-middle-padding-y: 16px;
+@button-small-padding-x: 0px;
+@button-small-padding-y: 8px;
+@button-line-height: 1.5;
+
+@button-border-radius-sm: 4px;
+@button-border-radius-m: 6px;
+@button-border-radius-lg: 8px;
+
+@button-disable-border-color: #d9d9d9;
+@button-disable-color: rgba(0, 0, 0, 0.25);
+@button-disable-bg: rgba(0, 0, 0, 0.04);
+
+@button-default-border-color: #d9d9d9;
+@button-default-color: rgba(0, 0, 0, 0.88);
+@button-default-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+
+@button-text-bg-hover: rgba(0, 0, 0, 0.06);
+@button-text-bg-active: rgba(0, 0, 0, 0.15);
+
+@button-link-color: #1677ff;
+@button-link-color-hover: #69b1ff;
+@button-link-color-active: #0958d9;
+
+.@{prefixName}-btn {
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 8px;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer; // 可能在移动端长按会有阴影
+  outline: none;
+  border: none;
+  transition: all 0.2s;
+  line-height: @button-line-height;
+
+  // 按钮大小 start
+  &.@{prefixName}-large {
+    font-size: 16px;
+    padding: @button-large-padding-x @button-large-padding-y;
+
+    &.@{prefixName}-square {
+      border-radius: @button-border-radius-lg;
+    }
+  }
+
+  &.@{prefixName}-middle {
+    font-size: 14px;
+    padding: @button-middle-padding-x @button-middle-padding-y;
+
+    &.@{prefixName}-square {
+      border-radius: @button-border-radius-m;
+    }
+  }
+
+  &.@{prefixName}-small {
+    font-size: 14px;
+    padding: @button-small-padding-x @button-small-padding-y;
+
+    &.@{prefixName}-square {
+      border-radius: @button-border-radius-sm;
+    }
+  }
+  // 按钮大小 end
+
+  // 按钮类型 start
+  &.@{prefixName}-primary {
+    background-color: @primary-color;
+    color: #fff;
+
+    &:hover {
+      background-color: @primary-color-hover;
+    }
+
+    &:active {
+      background-color: @primary-color-active;
+    }
+
+    &:disabled {
+      border: 1px solid @button-disable-border-color;
+      color: @button-disable-color;
+      background-color: @button-disable-bg;
+    }
+  }
+
+  &.@{prefixName}-default {
+    background: #fff;
+    border: 1px solid @button-default-border-color;
+    color: @button-default-color;
+    box-shadow: @button-default-box-shadow;
+
+    &:hover {
+      color: @primary-color-hover;
+      border-color: @primary-color-hover;
+    }
+
+    &:active {
+      color: @primary-color-active;
+      border-color: @primary-color-active;
+    }
+
+    &:disabled {
+      border: 1px solid @button-disable-border-color;
+      color: @button-disable-color;
+      background-color: @button-disable-bg;
+    }
+  }
+
+  &.@{prefixName}-dashed {
+    background: #fff;
+    border: 1px dashed @button-default-border-color;
+    color: @button-default-color;
+    box-shadow: @button-default-box-shadow;
+
+    &:hover {
+      color: @primary-color-hover;
+      border-color: @primary-color-hover;
+    }
+
+    &:active {
+      color: @primary-color-active;
+      border-color: @primary-color-active;
+    }
+
+    &:disabled {
+      border: 1px dashed @button-disable-border-color;
+      color: @button-disable-color;
+      background-color: @button-disable-bg;
+    }
+  }
+
+  &.@{prefixName}-text {
+    color: @button-default-color;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      background-color: @button-text-bg-hover;
+    }
+
+    &:active {
+      background-color: @button-text-bg-active;
+    }
+
+    &:disabled {
+      color: @button-disable-color;
+      background-color: @button-disable-bg;
+    }
+  }
+
+  &.@{prefixName}-link {
+    color: @button-default-color;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      color: @button-link-color-hover;
+    }
+
+    &:active {
+      color: @button-link-color-active;
+    }
+
+    &:disabled {
+      color: @button-disable-color;
+      background-color: @button-disable-bg;
+    }
+  }
+  // 按钮类型 end
+
+  &.@{prefixName}-circle {
+    border-radius: 50%;
+  }
+}

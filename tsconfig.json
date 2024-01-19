@@ -11,6 +11,7 @@
       "SoyaMilk-design": ["src"],
       "SoyaMilk-design/*": ["src/*", "*"],
       "@": ["src"],
+      "~@": ["src"],
       "@/*": ["src/*"]
     }
   },
