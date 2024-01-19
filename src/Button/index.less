@@ -27,6 +27,11 @@
 @button-link-color-hover: #69b1ff;
 @button-link-color-active: #0958d9;
 
+@button-danger-color: @error-color;
+@button-danger-color-hover: @error-color-hover;
+@button-danger-color-active: @error-color-active;
+@button-danger-color-bg: @error-color-bg;
+
 .@{prefixName}-btn {
   font-size: 14px;
   font-weight: 400;
@@ -81,10 +86,23 @@
       background-color: @primary-color-active;
     }
 
-    &:disabled {
+    &.@{prefixName}-danger {
+      background-color: @button-danger-color;
+
+      &:hover {
+        background-color: @button-danger-color-hover;
+      }
+
+      &:active {
+        background-color: @button-danger-color-active;
+      }
+    }
+
+    &.@{prefixName}-disabled {
       border: 1px solid @button-disable-border-color;
       color: @button-disable-color;
       background-color: @button-disable-bg;
+      pointer-events: none;
     }
   }
 
@@ -104,10 +122,26 @@
       border-color: @primary-color-active;
     }
 
-    &:disabled {
+    &.@{prefixName}-danger {
+      color: @button-danger-color;
+      border: 1px solid @button-danger-color;
+
+      &:hover {
+        color: @button-danger-color-hover;
+        border: 1px solid @button-danger-color-hover;
+      }
+
+      &:active {
+        color: @button-danger-color-active;
+        border: 1px solid @button-danger-color-active;
+      }
+    }
+
+    &.@{prefixName}-disabled {
       border: 1px solid @button-disable-border-color;
       color: @button-disable-color;
       background-color: @button-disable-bg;
+      pointer-events: none;
     }
   }
 
@@ -127,10 +161,26 @@
       border-color: @primary-color-active;
     }
 
-    &:disabled {
+    &.@{prefixName}-danger {
+      color: @button-danger-color;
+      border: 1px dashed @button-danger-color;
+
+      &:hover {
+        color: @button-danger-color-hover;
+        border: 1px dashed @button-danger-color-hover;
+      }
+
+      &:active {
+        color: @button-danger-color-active;
+        border: 1px dashed @button-danger-color-active;
+      }
+    }
+
+    &.@{prefixName}-disabled {
       border: 1px dashed @button-disable-border-color;
       color: @button-disable-color;
       background-color: @button-disable-bg;
+      pointer-events: none;
     }
   }
 
@@ -147,14 +197,28 @@
       background-color: @button-text-bg-active;
     }
 
-    &:disabled {
+    &.@{prefixName}-danger {
+      color: @button-danger-color;
+
+      &:hover {
+        color: @button-danger-color-hover;
+        background-color: @button-danger-color-bg;
+      }
+
+      &:active {
+        color: @button-danger-color-active;
+        background-color: @button-danger-color-bg;
+      }
+    }
+
+    &.@{prefixName}-disabled {
       color: @button-disable-color;
-      background-color: @button-disable-bg;
+      pointer-events: none;
     }
   }
 
   &.@{prefixName}-link {
-    color: @button-default-color;
+    color: @button-link-color;
     background-color: transparent;
     border: none;
 
@@ -166,9 +230,21 @@
       color: @button-link-color-active;
     }
 
-    &:disabled {
+    &.@{prefixName}-danger {
+      color: @button-danger-color;
+
+      &:hover {
+        color: @button-danger-color-hover;
+      }
+
+      &:active {
+        color: @button-danger-color-active;
+      }
+    }
+
+    &.@{prefixName}-disabled {
       color: @button-disable-color;
-      background-color: @button-disable-bg;
+      pointer-events: none;
     }
   }
   // 按钮类型 end

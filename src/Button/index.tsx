@@ -17,6 +17,8 @@ interface ButtonProps {
   size?: ButtonSizeType;
   shape?: ButtonShapeType;
   disabled?: boolean;
+  danger?: boolean;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 function Button(props: ButtonProps) {
   const {
@@ -25,9 +27,12 @@ function Button(props: ButtonProps) {
     size = ButtonSizeMenu.Middle,
     shape = ButtonShapeMenu.Square,
     disabled,
+    danger,
+    onClick,
   } = props;
 
   const disabledClassName = (disabled && getWithPrefixCls('disabled')) || '';
+  const dangerClassName = (danger && getWithPrefixCls('danger')) || '';
 
   const composeClassName = [type, size, shape]
     .map((item) => getWithPrefixCls(item))
@@ -39,7 +44,9 @@ function Button(props: ButtonProps) {
         getWithPrefixCls('btn'),
         composeClassName,
         disabledClassName,
+        dangerClassName,
       )}
+      onClick={onClick}
     >
       {children}
     </button>
