@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkSoyaMilk_design=self.webpackChunkSoyaMilk_design||[]).push([[9],{65149:function(f,n,e){e.r(n),e.d(n,{default:function(){return r}});var a=e(20235),t=e(67294),d=function(){var s=(0,a.UO)(),u=s.id,m=(0,a.WF)(),i=m.demos,c=i[u]||{},o=c.component;return o&&(0,t.createElement)(o)},r=d}}]);
